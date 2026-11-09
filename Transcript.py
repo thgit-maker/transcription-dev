@@ -12,10 +12,10 @@ from pydub.silence import split_on_silence
 # ==========================================
 # 最終修正版：無音の長さを100%保持する分割・同期スクリプト
 # ==========================================
-AUDIO_FILE_L = "/content/GMT20260127-000049_Recording_separate1_short.wav"
-AUDIO_FILE_R = "/content/GMT20260127-000049_Recording_separate2_short.wav"
-BASE_EAF_PATH = "/content/GMT20260127-000049_Recording_org.eaf"
-OUTPUT_EAF_PATH = "/content/GMT20260127-000049_Recording_merged.eaf"
+AUDIO_FILE_L = "/content/Speaker_L.wav"
+AUDIO_FILE_R = "/content/Speaker_R.wav"
+BASE_EAF_PATH = "/content/Transcription.eaf"
+OUTPUT_EAF_PATH = "/content/Transcription_merged.eaf"
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 batch_size = 16
